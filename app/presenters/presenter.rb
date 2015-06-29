@@ -48,6 +48,12 @@ class Presenter
       end
     end
 
+    def each_cost_code
+      [1,2,3].each do |val|
+        yield val, "cost_code#{val}"
+      end
+    end
+
   end
   include SharedBehaviour
 

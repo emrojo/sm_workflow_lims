@@ -37,6 +37,10 @@ module Presenter::AssetPresenter
       asset.pipeline_destination.nil? ? 'None' : asset.pipeline_destination.name
     end
 
+    def cost_code
+      asset.cost_code.nil? ? '' : asset.cost_code
+    end
+
     def created_at
       asset.created_at.strftime('%d/%m/%Y')
     end
